@@ -30,9 +30,9 @@ hddFree=0
 #SD Total
 sdTotal=$(df -h | grep "/dev/root" | cut -c18-19)
 #SD Used
-sdUsed=$(df -h | grep "/dev/root" | cut -c29-31)
+sdUsed=$(df -h | grep "/dev/root" | cut -c22-25)
 #SD Free
-sdFree=$(df -h | grep "/dev/root" | cut -c22-25)
+sdFree=$(df -h | grep "/dev/root" | cut -c29-31)
 #cpu temp
 cpuTemp=$(/opt/vc/bin/vcgencmd measure_temp | cut -c6-9)
 #Cpu Load 1
